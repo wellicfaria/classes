@@ -114,6 +114,10 @@ mindmap
                     Serviço de banco de dados relacional.
 ```
 
+### Ideia Geral em um Gif
+
+![Data Pipeline](DNC/Arquitetura de Data Pipelines/ 0 - Data Pipelines/img/1703660998035.gif)
+
 ### Teoria Básica (4 min)
 
 - Data Pipelines no `Mundo Real`. 

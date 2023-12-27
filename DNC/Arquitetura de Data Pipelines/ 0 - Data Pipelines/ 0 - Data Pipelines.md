@@ -15,11 +15,11 @@ O processo em um Data Pipeline geralmente começa com a *extração* de dados de
 
 ### Componentes de um Data Pipeline
 
-- Coleta de dados: Como os dados são adquiridos.
-- Processamento de dados: Métodos de transformação dos dados.
-- Armazenamento de dados: Onde e como os dados são armazenados.
+- `Coleta de dados`: Como os dados são adquiridos.
+- `Processamento de dados`: Métodos de transformação dos dados.
+- `Armazenamento de dados`: Onde e como os dados são armazenados.
 
-Dados esse componentes, podemos ter uma visão geral de como um Data Pipeline é construído, abaixo segue um exemplo de tecnologias que podem ser utilizadas para cada componente.
+Dados esse componentes, podemos ter uma visão geral de como um Data Pipeline é construído, abaixo segue um exemplo de tecnologias que podem ser utilizadas para cada componente.ß
 
 ```mermaid
 mindmap

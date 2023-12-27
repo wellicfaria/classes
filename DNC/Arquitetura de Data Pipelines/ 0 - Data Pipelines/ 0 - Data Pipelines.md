@@ -30,16 +30,16 @@ Aqui está o fluxo de ETL para este cenário:
 `Carregamento (Load)`: Os dados transformados são carregados em um data warehouse para análise e geração de relatórios.
 
 ```mermaid
-graph LR
-    A[Database de Tickets] -->|Extrair| C[Transformação]
-    B[Sistema de Feedback] -->|Extrair| C[Transformação]
-    C -->|Limpeza de Dados| D[Transformação]
-    C -->|Combinação de Dados| E[Transformação]
-    C -->|Agregação| F[Transformação]
-    D --> G|Data Warehouse|[Carregamento]
-    E --> G
-    F --> G
-    G --> H[Análise de Satisfação do Cliente]
+graph TD;
+    A[Database de Tickets] -->|Extrair| C[Transformação];
+    B[Sistema de Feedback] -->|Extrair| C[Transformação];
+    C -->|Limpeza de Dados| D[Transformação];
+    C -->|Combinação de Dados| E[Transformação];
+    C -->|Agregação| F[Transformação];
+    D --> G|Data Warehouse|[Carregamento];
+    E --> G;
+    F --> G;
+    G --> H[Análise de Satisfação do Cliente];
 ```
 
 

@@ -25,7 +25,9 @@ Dados esse componentes, podemos ter uma visão geral de como um Data Pipeline é
 mindmap
     root((Data Pipeline))
         Coleta de dados
+        ::icon(fas fa-plug)
             AWS
+            ::icon(fab fa-aws)
                 Amazon Kinesis
                     Serviço de streaming de dados em tempo real.
                 AWS IoT Core
@@ -33,6 +35,7 @@ mindmap
                 Glue
                     Serviço de ETL.
             Azure
+            ::icon(fab fa-microsoft)
                 Azure Event Hubs
                             Serviço de streaming de dados em tempo real.
                         Azure IoT Hub
@@ -40,12 +43,15 @@ mindmap
                         Azure Data Factory
                             Serviço de ETL.
             GCP
+            ::icon(fab fa-google)
                 Google Cloud Pub/Sub
                     Serviço de mensagens para dispositivos IoT.
                 Google Cloud Dataflow
                     Serviço de ETL.
         Processamento de dados
+        ::icon(fas fa-cogs)
             AWS
+            ::icon(fab fa-aws)
                 Amazon EMR
                     Serviço de processamento de dados distribuído.
                 AWS Lambda
@@ -55,6 +61,7 @@ mindmap
                 Databricks
                     Serviço de processamento de dados distribuído.
             Azure
+            ::icon(fab fa-microsoft)
                 Azure HDInsight
                     Serviço de processamento de dados distribuído.
                 Azure Functions
@@ -64,6 +71,7 @@ mindmap
                 Databricks
                     Serviço de processamento de dados distribuído.
             GCP
+            ::icon(fab fa-google)
                 Google Cloud Dataproc
                     Serviço de processamento de dados distribuído.
                 Google Cloud Functions
@@ -73,7 +81,9 @@ mindmap
                 Databricks
                     Serviço de processamento de dados distribuído.
         Armazenamento de dados
+        ::icon(fas fa-database)
             AWS
+            ::icon(fab fa-aws)
                 Amazon S3
                     Serviço de armazenamento de objetos.
                 Amazon Redshift
@@ -83,6 +93,7 @@ mindmap
                 Amazon RDS
                     Serviço de banco de dados relacional.
             Azure
+            ::icon(fab fa-microsoft)
                 Azure Blob Storage
                     Serviço de armazenamento de objetos.
                 Azure Synapse Analytics
@@ -92,6 +103,7 @@ mindmap
                 Azure SQL Database
                     Serviço de banco de dados relacional.
             GCP
+            ::icon(fab fa-google)
                 Google Cloud Storage
                     Serviço de armazenamento de objetos.
                 Google BigQuery

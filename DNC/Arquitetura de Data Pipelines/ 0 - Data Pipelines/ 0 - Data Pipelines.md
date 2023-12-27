@@ -23,82 +23,82 @@ Dados esse componentes, podemos ter uma visão geral de como um Data Pipeline é
 
 ```mindmap 
     root((Data Pipeline))
-    Coleta de dados
-        AWS
-            Amazon Kinesis
-                Serviço de streaming de dados em tempo real.
-            AWS IoT Core
-                Serviço de mensagens para dispositivos IoT.
-            Glue
-                Serviço de ETL.
-        Azure
-            Azure Event Hubs
-                Serviço de streaming de dados em tempo real.
-            Azure IoT Hub
-                Serviço de mensagens para dispositivos IoT.
-            Azure Data Factory
-                Serviço de ETL.
-        GCP
-            Google Cloud Pub/Sub
-                Serviço de mensagens para dispositivos IoT.
-            Google Cloud Dataflow
-                Serviço de ETL.
-    Processamento de dados
-        AWS
-            Amazon EMR
-                Serviço de processamento de dados distribuído.
-            AWS Lambda
-                Serviço de computação sem servidor.
-            AWS Glue
-                Serviço de ETL.
-            Databricks
-                Serviço de processamento de dados distribuído.
-        Azure
-            Azure HDInsight
-                Serviço de processamento de dados distribuído.
-            Azure Functions
-                Serviço de computação sem servidor.
-            Azure Data Factory
-                Serviço de ETL.
-            Databricks
-                Serviço de processamento de dados distribuído.
-        GCP
-            Google Cloud Dataproc
-                Serviço de processamento de dados distribuído.
-            Google Cloud Functions
-                Serviço de computação sem servidor.
-            Google Cloud Dataflow
-                Serviço de ETL.
-            Databricks
-                Serviço de processamento de dados distribuído.
-    Armazenamento de dados
-        AWS
-            Amazon S3
-                Serviço de armazenamento de objetos.
-            Amazon Redshift
-                Serviço de data warehouse.
-            Amazon DynamoDB
-                Serviço de banco de dados NoSQL.
-            Amazon RDS
-                Serviço de banco de dados relacional.
-        Azure
-            Azure Blob Storage
-                Serviço de armazenamento de objetos.
-            Azure Synapse Analytics
-                Serviço de data warehouse.
-            Azure Cosmos DB
-                Serviço de banco de dados NoSQL.
-            Azure SQL Database
-                Serviço de banco de dados relacional.
-        GCP
-            Google Cloud Storage
-                Serviço de armazenamento de objetos.
-            Google BigQuery
-                Serviço de data warehouse.
-            Google Cloud Bigtable
-                Serviço de banco de dados NoSQL.
-            Google Cloud SQL
-                Serviço de banco de dados relacional.
+        Coleta de dados
+            AWS
+                Amazon Kinesis
+                    Serviço de streaming de dados em tempo real.
+                AWS IoT Core
+                    Serviço de mensagens para dispositivos IoT.
+                Glue
+                    Serviço de ETL.
+            Azure
+                Azure Event Hubs
+                    Serviço de streaming de dados em tempo real.
+                Azure IoT Hub
+                    Serviço de mensagens para dispositivos IoT.
+                Azure Data Factory
+                    Serviço de ETL.
+            GCP
+                Google Cloud Pub/Sub
+                    Serviço de mensagens para dispositivos IoT.
+                Google Cloud Dataflow
+                    Serviço de ETL.
+        Processamento de dados
+            AWS
+                Amazon EMR
+                    Serviço de processamento de dados distribuído.
+                AWS Lambda
+                    Serviço de computação sem servidor.
+                AWS Glue
+                    Serviço de ETL.
+                Databricks
+                    Serviço de processamento de dados distribuído.
+            Azure
+                Azure HDInsight
+                    Serviço de processamento de dados distribuído.
+                Azure Functions
+                    Serviço de computação sem servidor.
+                Azure Data Factory
+                    Serviço de ETL.
+                Databricks
+                    Serviço de processamento de dados distribuído.
+            GCP
+                Google Cloud Dataproc
+                    Serviço de processamento de dados distribuído.
+                Google Cloud Functions
+                    Serviço de computação sem servidor.
+                Google Cloud Dataflow
+                    Serviço de ETL.
+                Databricks
+                    Serviço de processamento de dados distribuído.
+        Armazenamento de dados
+            AWS
+                Amazon S3
+                    Serviço de armazenamento de objetos.
+                Amazon Redshift
+                    Serviço de data warehouse.
+                Amazon DynamoDB
+                    Serviço de banco de dados NoSQL.
+                Amazon RDS
+                    Serviço de banco de dados relacional.
+            Azure
+                Azure Blob Storage
+                    Serviço de armazenamento de objetos.
+                Azure Synapse Analytics
+                    Serviço de data warehouse.
+                Azure Cosmos DB
+                    Serviço de banco de dados NoSQL.
+                Azure SQL Database
+                    Serviço de banco de dados relacional.
+            GCP
+                Google Cloud Storage
+                    Serviço de armazenamento de objetos.
+                Google BigQuery
+                    Serviço de data warehouse.
+                Google Cloud Bigtable
+                    Serviço de banco de dados NoSQL.
+                Google Cloud SQL
+                    Serviço de banco de dados relacional.
 ```
 
 ### Teoria Básica (4 min)

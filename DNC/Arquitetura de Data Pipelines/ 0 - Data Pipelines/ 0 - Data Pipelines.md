@@ -13,7 +13,7 @@ Um Data Pipeline é uma série de processos de dados projetados para *transforma
 
 O processo em um Data Pipeline geralmente começa com a *extração* de dados de fontes diversas, como bancos de dados, sistemas de arquivos, feeds ao vivo ou serviços na nuvem. Após a extração, os dados são *transformados*. Esta transformação pode envolver `limpeza, agregação, enriquecimento, ou outras formas de manipulação para tornar os dados mais úteis e consistentes`. Por fim, os dados transformados são *carregados* em um sistema de armazenamento ou análise, como um Data warehouse ou Data Lake.  Assim temos o conceito de ETL (Extract, Transform, Load). 
 
-### Componentes de um Data Pipeline
+#### Componentes de um Data Pipeline
 
 - `Coleta de dados`: Como os dados são adquiridos.
 - `Processamento de dados`: Métodos de transformação dos dados.

@@ -19,7 +19,7 @@ O processo em um Data Pipeline geralmente começa com a *extração* de dados de
 - `Processamento de dados`: Métodos de transformação dos dados.
 - `Armazenamento de dados`: Onde e como os dados são armazenados.
 
-Dados esse componentes, podemos ter uma visão geral de como um Data Pipeline é construído, abaixo segue um exemplo de tecnologias que podem ser utilizadas para cada componente.ß
+O mapa mental a seguir ilustra a diversidade de tecnologias disponíveis para cada componente de um Data Pipeline. Este mapa fornece uma visão abrangente das tecnologias e ferramentas mais reconhecidas no mercado, facilitando a compreensão de como cada uma se integra ao fluxo geral de um processo ETL.
 
 ```mermaid
 mindmap

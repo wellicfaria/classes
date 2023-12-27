@@ -21,8 +21,7 @@ O processo em um Data Pipeline geralmente começa com a *extração* de dados de
 
 Dados esse componentes, podemos ter uma visão geral de como um Data Pipeline é construído, abaixo segue um exemplo de tecnologias que podem ser utilizadas para cada componente.
 
-```
-mindmap 
+```mindmap
     root((Data Pipeline))
    
 ```

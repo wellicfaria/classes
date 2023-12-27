@@ -120,6 +120,9 @@ Nesse GIF, podemos ver um fluxo ETL, onde os dados são extraídos, transformado
 
 ![](./img/1703660998035.gif)
 
+> [!NOTE]
+> Data Lakes são adequados para armazenar grandes volumes de dados em vários formatos, Data Warehouses são mais focados em armazenar dados estruturados para query e análise. Lake Houses tentam oferecer o melhor dos dois mundos, combinando a versatilidade de um Data Lake com as capacidades de processamento e análise de um Data Warehouse.
+
 ### Teoria Básica (4 min)
 
 - Data Pipelines no `Mundo Real`. 

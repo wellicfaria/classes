@@ -114,7 +114,9 @@ mindmap
                     Serviço de banco de dados relacional.
 ```
 
-### Ideia Geral em um Gif
+### Ideia Geral em um GIF
+
+Nesse GIF, podemos ver um fluxo ETL, onde os dados são extraídos, transformados e carregados e assim utilizados para diferentes propósitos.
 
 ![](./img/1703660998035.gif)
 

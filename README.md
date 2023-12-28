@@ -17,6 +17,10 @@ Minha jornada profissional inclui experiências em empresas de tecnologia e fina
 
 Você pode navegar pelas diferentes pastas para acessar o conteúdo das aulas. Cada pasta contém arquivos específicos do tópico, incluindo slides, códigos de exemplo e listas de recursos adicionais.
 
+Para fazer as atividades e rodar os códigos, criamos de `devcontainer.jon`. Para isso, você precisa ter o [Docker](https://www.docker.com/) instalado em sua máquina. Para mais informações, acesse a [documentação do Docker](https://docs.docker.com/get-docker/).
+A partir daí, basta abrir o VSCode e rodar o comando `Remote-Containers: Open Folder in Container...` e selecionar a pasta do projeto.
+Para saber mais sobre o VSCode Remote Containers, acesse a [documentação](https://code.visualstudio.com/docs/remote/containers).
+
 ## Contribuições
 
 Contribuições são sempre bem-vindas! Se você tem sugestões de melhorias, correções ou quer adicionar novos recursos, fique à vontade para abrir uma issue ou enviar um pull request.

@@ -13,6 +13,14 @@ Minha jornada profissional inclui experiências em empresas de tecnologia e fina
 - `Aulas de Python`: Aqui você encontrará materiais relacionados à programação em Python, desde conceitos básicos até tópicos avançados.
 - `Aulas de Engenharia de Dados`: Esta seção contém recursos e materiais de estudo focados em Engenharia de Dados, incluindo melhores práticas, ferramentas e tecnologias da área.
 
+Na tabela abaixo, você pode navegar pelas aulas. Cada aula contém um tópico, tema e link para o conteúdo.
+
+### Tabela de Aulas
+
+| Aula | Tópico | Tema | Link |
+| :---: | :---: | :---: | :---: |
+| 00 | Arquitetura de Data Pipelines | Data Pipelines | [ 0 - Data Pipelines.md](DNC/Arquitetura%20de%20Data%20Pipelines/%200%20-%20Data%20Pipelines/%200%20-%20Data%20Pipelines.md)
+
 ## Como Usar Este Repositório
 
 Você pode navegar pelas diferentes pastas para acessar o conteúdo das aulas. Cada pasta contém arquivos específicos do tópico, incluindo slides, códigos de exemplo e listas de recursos adicionais.

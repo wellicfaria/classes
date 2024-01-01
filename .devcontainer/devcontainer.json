@@ -24,6 +24,15 @@
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {
             "version": "latest"
         }
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"antfu.slidev"
+			]
+		}
 	}
 	//"postCreateCommand": "curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt-get install -y nodejs && npm init slidev@latest"
 }

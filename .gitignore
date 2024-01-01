@@ -36,6 +36,13 @@ env/
 node_modules/
 package-lock.json
 yarn.lock
+.DS_Store
+dist
+*.local
+index.html
+.remote-assets
+components.d.ts
+
 
 # Diretórios e arquivos de compilação do Slidev
 .sli.dev/

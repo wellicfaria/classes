@@ -1,9 +1,22 @@
+---
+theme: default
+highlighter: prism
+---
+
 # Arquitetura de Data Pipelines
 
 ## Informações Gerais
 
 **Tópico**: Arquitetura de Data Pipelines  
 **Tema**: Data Pipelines  
+
+### Objetivos da Aula: 
+    - Entender o que é um Data Pipeline.
+    - Entender os componentes de um Data Pipeline.
+    - Entender o conceito de ETL (Extract, Transform, Load).
+    - Codificar um exemplo simples de pipeline de dados usando Python.
+
+---
 
 ### Introdução (3 min)
 
@@ -13,6 +26,8 @@ Um Data Pipeline é uma série de processos de dados projetados para *transforma
 
 O processo em um Data Pipeline geralmente começa com a *extração* de dados de fontes diversas, como bancos de dados, sistemas de arquivos, feeds ao vivo ou serviços na nuvem. Após a extração, os dados são *transformados*. Esta transformação pode envolver `limpeza, agregação, enriquecimento, ou outras formas de manipulação para tornar os dados mais úteis e consistentes`. Por fim, os dados transformados são *carregados* em um sistema de armazenamento ou análise, como um Data warehouse ou Data Lake.  Assim temos o conceito de ETL (Extract, Transform, Load). 
 
+---
+
 #### Componentes de um Data Pipeline
 
 - `Coleta de dados`: Como os dados são adquiridos.
@@ -20,6 +35,10 @@ O processo em um Data Pipeline geralmente começa com a *extração* de dados de
 - `Armazenamento de dados`: Onde e como os dados são armazenados.
 
 O mapa mental a seguir ilustra a diversidade de tecnologias disponíveis para cada componente de um Data Pipeline. Este mapa fornece uma visão abrangente das tecnologias e ferramentas mais reconhecidas no mercado, facilitando a compreensão de como cada uma se integra ao fluxo geral de um processo ETL.
+
+---
+
+#### Mapa Mental de Tecnologias
 
 ```mermaid
 mindmap
@@ -114,7 +133,9 @@ mindmap
                     Serviço de banco de dados relacional.
 ```
 
-### Ideia Geral em um GIF
+---
+
+### Ideia Geral do ETL em um GIF
 
 Nesse GIF, podemos ver um fluxo ETL, onde os dados são extraídos, transformados e carregados e assim utilizados para diferentes propósitos.
 
@@ -123,11 +144,17 @@ Nesse GIF, podemos ver um fluxo ETL, onde os dados são extraídos, transformado
 > [!NOTE]
 > Data Lakes são adequados para armazenar grandes volumes de dados em vários formatos, Data Warehouses são mais focados em armazenar dados estruturados para query e análise. Lake Houses tentam oferecer o melhor dos dois mundos, combinando a versatilidade de um Data Lake com as capacidades de processamento e análise de um Data Warehouse.
 
-### Teoria Básica (4 min)
+---
+
+### Exemplo em Mundo Real (4 min)
 
 - Data Pipelines no `Mundo Real`. 
 
-Vamos supor que você esteja trabalhando com dados de atendimento ao cliente e queira analisar a satisfação do cliente com base em tickets de suporte.
+Vamos supor que você esteja trabalhando com dados de atendimento ao cliente e queira `analisar a satisfação do cliente` com base em tickets de suporte.
+
+---
+
+### Fluxo de ETL para este cenário
 
 Aqui está o fluxo de ETL para este cenário:
 
@@ -136,6 +163,12 @@ Aqui está o fluxo de ETL para este cenário:
 `Transformação (Transform)`: Os dados são limpos (removendo entradas duplicadas, corrigindo erros), combinados (unindo dados de tickets com feedbacks) e agregados (calculando a média de satisfação por produto ou serviço).
 
 `Carregamento (Load)`: Os dados transformados são carregados em um data warehouse para análise e geração de relatórios.
+
+---
+
+### Fluxo de ETL para este cenário
+
+```mermaid
 
 ```mermaid
 flowchart LR
@@ -147,14 +180,12 @@ flowchart LR
     G --> H[Análise de Satisfação do Cliente]
 ```
 
+---
+
 ### Demonstrações de Código (6-8 min)
 - Apresentação de um exemplo simples de pipeline de dados usando Python.
 - Demonstração inclui extração de dados, uma transformação básica e carregamento em um sistema de armazenamento.
 
-
-
-### Conceito de ETL
-- Explicação do processo ETL (Extract, Transform, Load).
 
 ## Recursos Adicionais
 

@@ -217,7 +217,17 @@ Contexto do Exercício:
 
 - *Colunas do CSV:* Data, ProdutoID, QuantidadeVendida, PrecoUnitario.
 
-- *Objetivo da Transformação:* Calcular o total de vendas (quantidade x preço) por produto e filtrar apenas aqueles produtos cujas vendas totais sejam superiores a um determinado valor. Criando a coluna TotalVendas.
+- *Objetivo da Transformação:* Calcular o total de vendas (quantidade x preço) por produto, criando a coluna TotalVendas. E, filtrar apenas aqueles produtos cujas vendas totais sejam superiores a um determinado valor. 
+</br>
+### Fluxo de ETL
+
+```mermaid
+flowchart LR
+    A[(vendas.csv)] -->|Extrair|B[script_extract.py]
+    B -->|Transformar|C[script_transform.py]
+    C -->|Carregar|D[script_load.py]
+    D --> E[vendas_transformadas.csv]
+```
 
 ---
 
@@ -227,17 +237,19 @@ Contexto do Exercício:
 
 Ler o arquivo vendas.csv usando PySpark.
 
-Criando um script em Python usando Pyspark denominado script_extract.py.py, com uma funcão extract para extrair os dados do CSV. 
+Criando um script em Python usando Pyspark denominado `script_extract.py`, com uma funcão extract para extrair os dados do CSV. 
 
-Para gerar o arquivo vendas.csv, execute o script generate_vendas_csv.py contido na pasta `slidev/pages/Arquitetura de Data Pipelines/code`
+Para gerar o arquivo vendas.csv, execute o script `generate_vendas_csv.py` contido na pasta `slidev/pages/Arquitetura de Data Pipelines/code`
 
 <!-- 
-from pyspark.sql import SparkSession
+Exemplo:
+```python
+from pyspark.sql import SparkSession 
 
 def extract(spark):
     df = spark.read.csv("vendas.csv", header=True, inferSchema=True)
     return df
-
+```
 -->
 
 ---
@@ -246,17 +258,30 @@ def extract(spark):
 
 2. Transform (Transformar)
 
-Criar um script denominado script_transform.py com  uma funcão para calcular o total de vendas (quantidade x preço) por produto e filtrar apenas aqueles produtos cujas vendas totais sejam superiores a 10 reais. Criando a coluna TotalVendas.
+Criar um script denominado `script_transform.py` com  uma funcão para calcular o total de vendas (quantidade x preço), criando a coluna `TotalVendas`. e filtrar apenas aqueles produtos cujas vendas totais sejam superiores a 10 reais. 
+</br>
+```mermaid
+graph LR
+    A[Dados de Entrada: CSV<br>Data, ProdutoID, QuantidadeVendida, PrecoUnitario] -->|Leitura e Processamento| B(Transformação)
+    B -->|Cálculo de 'TotalVendas'<br>QuantidadeVendida x PrecoUnitario| C[Filtragem: TotalVendas > 10]
+    C -->|Agrupamento e Soma| D[Dados de Saída: DataFrame<br>ProdutoID, sumTotalVenda]
+```
 
 <!-- 
+
+```python
 from pyspark.sql import DataFrame
 from pyspark.sql.functions import col
 
 def transform(df: DataFrame):
     df_transformed = df.withColumn("TotalVenda", col("QuantidadeVendida") * col("PrecoUnitario"))
-    df_filtered = df_transformed.groupBy("ProdutoID").sum("TotalVenda").filter(col("sum(TotalVenda)") > 10000)
-    return df_filtered
 
+    df_transformed = df_transformed.select("ProdutoID", "TotalVenda")
+
+    df_filtered = df_transformed.groupBy("ProdutoID").sum("TotalVenda").filter(col("sum(TotalVenda)") > 10.0)
+    
+    return df_filtered
+```
 -->
 
 ---
@@ -265,13 +290,13 @@ def transform(df: DataFrame):
 
 3. Load (Carregar)
 
-Criar um Script denominado script_load.py para salvar o resultado em um novo arquivo CSV, vendas_transformadas.csv.
+Criar um Script denominado `script_load.py` para salvar o resultado em um novo arquivo CSV, vendas_transformadas.csv.
 
 <!-- 
-
+```python
 def load(df: DataFrame, output_path: str):
     df.write.csv(output_path, header=True)
-
+```
 -->
 
 --- 
@@ -283,17 +308,9 @@ def load(df: DataFrame, output_path: str):
 
 Criar um script denominado main.py para executar os scripts anteriores em sequência.
 
-### Fluxo de ETL
-
-```mermaid
-flowchart LR
-    A[(vendas.csv)] -->|Extrair|B[ex_extract.py]
-    B -->|Transformar|C[ex_transform.py]
-    C -->|Carregar|D[ex_load.py]
-    D --> E[vendas_transformadas.csv]
-```
 
 <!-- 
+```python
 from pyspark.sql import SparkSession
 from script_extract import extract
 from script_transform import transform
@@ -312,6 +329,7 @@ if __name__ == "__main__":
     load(transformed_df, "vendas_transformadas.csv")
 
     spark.stop()
+```
 -->
 
 --- 

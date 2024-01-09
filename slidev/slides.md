@@ -1,10 +1,10 @@
 ---
 theme: default
 highlighter: prism
-title: Planejamento e Conteúdos das Aulas de Python e Engenharia de Dados
+title: Aulas de Engenharia de Dados
 ---
 
-# Planejamento e Conteúdos das Aulas de Python e Engenharia de Dados
+# Engenharia de Dados
 
 Bem-vindo ao repositório onde compartilho o planejamento e conteúdos das minhas aulas sobre Python e Engenharia de Dados. Aqui, você encontrará materiais didáticos, exemplos de código, e recursos adicionais para aprimorar seu aprendizado nessas áreas.
 
@@ -136,9 +136,9 @@ Se você tiver dúvidas ou quiser entrar em contato comigo, pode me enviar um e-
 
 Obrigado por visitar este repositório e espero que os materiais aqui disponibilizados ajudem em sua jornada de aprendizado!
 
-
 ---
 src: ./pages/Arquitetura de Data Pipelines/0 - Data Pipelines.md
+---
 
 
 

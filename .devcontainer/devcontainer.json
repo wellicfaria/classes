@@ -30,7 +30,8 @@
 			"extensions": [
 				"GitHub.copilot",
 				"GitHub.copilot-chat",
-				"antfu.slidev"
+				"antfu.slidev",
+				"mechatroner.rainbow-csv"
 			]
 		}
 	}

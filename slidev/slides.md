@@ -12,10 +12,6 @@ Bem-vindo ao repositório onde compartilho o planejamento e conteúdos das minha
 
 -->
 
----
-src: ./pages/Arquitetura de Data Pipelines/0 - Data Pipelines.md
----
-
 
 ---
 layout: two-cols
@@ -140,14 +136,10 @@ Se você tiver dúvidas ou quiser entrar em contato comigo, pode me enviar um e-
 
 Obrigado por visitar este repositório e espero que os materiais aqui disponibilizados ajudem em sua jornada de aprendizado!
 
+
 ---
+src: ./pages/Arquitetura de Data Pipelines/0 - Data Pipelines.md
 
-## Conteúdo do Repositório
 
-Na tabela abaixo, você pode navegar pelas aulas. Cada aula contém um tópico, tema e link para o conteúdo.
 
-### Tabela de Aulas
 
-| Aula | Tópico | Tema | Link |
-| :---: | :---: | :---: | :---: |
-| 00 | Arquitetura de Data Pipelines | Data Pipelines | [ 0 - Data Pipelines.md](DNC/Arquitetura%20de%20Data%20Pipelines/%200%20-%20Data%20Pipelines/%200%20-%20Data%20Pipelines.md)

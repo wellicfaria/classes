@@ -227,7 +227,7 @@ Contexto do Exercício:
 
 Ler o arquivo vendas.csv usando PySpark.
 
-Criando um script em Python usando Pyspark denominado script_extract.py.py, com uma funcão extrair um dados de um CSV. 
+Criando um script em Python usando Pyspark denominado script_extract.py.py, com uma funcão extract para extrair os dados do CSV. 
 
 Para gerar o arquivo vendas.csv, execute o script generate_vendas_csv.py contido na pasta `slidev/pages/Arquitetura de Data Pipelines/code`
 
